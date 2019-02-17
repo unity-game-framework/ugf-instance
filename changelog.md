@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing.
 
-## [1.0.0] - 2019-01-01
+## [1.0.0-preview] - 2019-02-17
 ### Added
 - Migrate from internal repository.
 - Add non-alloc GetEnumerator. (#3)
@@ -33,17 +33,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Split default collections to non-cached and cached. (#4)
 - Initialize IdentifierType on creation. (#7)
 
-### Deprecated
-- Nothing.
-
 ### Removed
 - Remove InstanceIdentifierGeneratorPrimitive. (#6)
-
-### Fixed
-- Nothing.
-
-### Security
-- Nothing.
 
 ---
 > Unity Game Framework | Copyright 2019
