@@ -38,7 +38,7 @@ namespace UGF.Instance.Runtime.Tests
         [Test]
         public void Remove()
         {
-            var collection = new InstanceCollectionInt32<Instance>();
+            var collection = new InstanceCollectionInt32Cached<Instance>();
             var instance = new Instance();
             int id = collection.Add(instance);
             
@@ -58,7 +58,7 @@ namespace UGF.Instance.Runtime.Tests
         [Test]
         public void Clear()
         {
-            var collection = new InstanceCollectionInt32<Instance>();
+            var collection = new InstanceCollectionInt32Cached<Instance>();
             var instance = new Instance();
 
             int id = collection.Add(instance);
