@@ -26,18 +26,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2019-01-01
 ### Added
 - Migrate from internal repository.
-- Add non-alloc GetEnumerator. [#3](https://github.com/unity-game-framework/ugf-instance/issues/3)
+- Add non-alloc GetEnumerator. (#3)
 
 ### Changed
-- Make InstanceCollection as read-only. [#5](https://github.com/unity-game-framework/ugf-instance/issues/5)
-- Split default collections to non-cached and cached. [#4](https://github.com/unity-game-framework/ugf-instance/issues/4)
-- Initialize IdentifierType on creation. [#7](https://github.com/unity-game-framework/ugf-instance/issues/7)
+- Make InstanceCollection as read-only. (#5)
+- Split default collections to non-cached and cached. (#4)
+- Initialize IdentifierType on creation. (#7)
 
 ### Deprecated
 - Nothing.
 
 ### Removed
-- Remove InstanceIdentifierGeneratorPrimitive. [#6](https://github.com/unity-game-framework/ugf-instance/issues/6)
+- Remove InstanceIdentifierGeneratorPrimitive. (#6)
 
 ### Fixed
 - Nothing.
