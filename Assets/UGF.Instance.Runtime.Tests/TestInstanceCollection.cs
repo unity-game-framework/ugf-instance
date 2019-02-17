@@ -95,5 +95,15 @@ namespace UGF.Instance.Runtime.Tests
             
             Assert.Null(result);
         }
+
+        [Test]
+        public void GetEnumerator()
+        {
+            var collection = new InstanceCollectionInt32<Instance>();
+
+            foreach (var pair in collection)
+            {
+            }
+        }
     }
 }

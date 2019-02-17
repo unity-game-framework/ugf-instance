@@ -96,14 +96,19 @@ namespace UGF.Instance.Runtime
             return typeof(TInstance);
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-
-        public IEnumerator<KeyValuePair<TIdentifier, TInstance>> GetEnumerator()
+        public Dictionary<TIdentifier, TInstance>.Enumerator GetEnumerator()
         {
             return m_instances.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return ((IEnumerable)m_instances).GetEnumerator();
+        }
+        
+        IEnumerator<KeyValuePair<TIdentifier, TInstance>> IEnumerable<KeyValuePair<TIdentifier, TInstance>>.GetEnumerator()
+        {
+            return ((IEnumerable<KeyValuePair<TIdentifier, TInstance>>)m_instances).GetEnumerator();
         }
     }
 }
