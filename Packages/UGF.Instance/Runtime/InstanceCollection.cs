@@ -59,33 +59,6 @@ namespace UGF.Instance.Runtime
             m_instances.Clear();
         }
 
-        bool IInstanceCollection.Contains(object identifier)
-        {
-            return m_instances.ContainsKey((TIdentifier)identifier);
-        }
-
-        object IInstanceCollection.Add(object instance)
-        {
-            return Add((TInstance)instance);
-        }
-
-        bool IInstanceCollection.Remove(object identifier)
-        {
-            return Remove((TIdentifier)identifier);
-        }
-
-        bool IInstanceCollection.TryGetInstance(object identifier, out object instance)
-        {
-            if (m_instances.TryGetValue((TIdentifier)identifier, out var value))
-            {
-                instance = value;
-                return true;
-            }
-
-            instance = default;
-            return false;
-        }
-
         public Type GetIdentifierType()
         {
             return typeof(TIdentifier);
