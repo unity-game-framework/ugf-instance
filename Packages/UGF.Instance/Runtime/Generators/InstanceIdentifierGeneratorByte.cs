@@ -3,7 +3,7 @@
     /// <summary>
     /// The primitive identifier generator that generate identifiers of the Byte type.
     /// </summary>
-    public class InstanceIdentifierGeneratorByte : InstanceIdentifierGeneratorPrimitive<byte>
+    public class InstanceIdentifierGeneratorByte : InstanceIdentifierGeneratorBase<byte>
     {
         public InstanceIdentifierGeneratorByte() : base(byte.MinValue, byte.MaxValue)
         {

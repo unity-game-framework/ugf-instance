@@ -3,7 +3,7 @@
     /// <summary>
     /// The primitive identifier generator that generate identifiers of the UInt64 type.
     /// </summary>
-    public class InstanceIdentifierGeneratorUInt64 : InstanceIdentifierGeneratorPrimitive<ulong>
+    public class InstanceIdentifierGeneratorUInt64 : InstanceIdentifierGeneratorBase<ulong>
     {
         public InstanceIdentifierGeneratorUInt64() : base(ulong.MinValue, ulong.MaxValue)
         {

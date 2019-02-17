@@ -3,7 +3,7 @@
     /// <summary>
     /// The primitive identifier generator that generate identifiers of the UInt16 type.
     /// </summary>
-    public class InstanceIdentifierGeneratorUInt16 : InstanceIdentifierGeneratorPrimitive<ushort>
+    public class InstanceIdentifierGeneratorUInt16 : InstanceIdentifierGeneratorBase<ushort>
     {
         public InstanceIdentifierGeneratorUInt16() : base(ushort.MinValue, ushort.MaxValue)
         {
