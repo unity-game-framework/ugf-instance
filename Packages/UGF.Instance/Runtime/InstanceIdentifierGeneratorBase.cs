@@ -8,7 +8,7 @@ namespace UGF.Instance.Runtime
     /// </summary>
     public abstract class InstanceIdentifierGeneratorBase<TIdentifier> : IInstanceIdentifierGenerator<TIdentifier>
     {
-        public Type IdentifierType { get { return typeof(TIdentifier); } }
+        public Type IdentifierType { get; } = typeof(TIdentifier);
         public TIdentifier PreviousIdentifier { get; protected set; }
         public TIdentifier DefaultIdentifier { get; }
         public TIdentifier InvalidIdentifier { get; }
