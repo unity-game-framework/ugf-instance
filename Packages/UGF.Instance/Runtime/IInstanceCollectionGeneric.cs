@@ -39,5 +39,10 @@ namespace UGF.Instance.Runtime
         /// <param name="identifier">The identifier.</param>
         /// <param name="instance">The instance.</param>
         bool TryGetInstance(TIdentifier identifier, out TInstance instance);
+        
+        /// <summary>
+        /// Removes all instances from the collection.
+        /// </summary>
+        void Clear();
     }
 }
