@@ -3,7 +3,7 @@
     /// <summary>
     /// The primitive identifier generator that generate identifiers of the UInt32 type.
     /// </summary>
-    public class InstanceIdentifierGeneratorUInt32 : InstanceIdentifierGeneratorPrimitive<uint>
+    public class InstanceIdentifierGeneratorUInt32 : InstanceIdentifierGeneratorBase<uint>
     {
         public InstanceIdentifierGeneratorUInt32() : base(uint.MinValue, uint.MaxValue)
         {
