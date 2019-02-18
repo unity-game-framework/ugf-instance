@@ -1,4 +1,6 @@
-﻿namespace UGF.Instance.Runtime
+﻿using System;
+
+namespace UGF.Instance.Runtime
 {
     /// <summary>
     /// Implementation of <see cref="T:UGF.Instance.Runtime.IInstanceIdentifierGenerator`1" /> with specified generator handler.
@@ -10,7 +12,6 @@
         /// </summary>
         public InstanceIdentifierGeneratorHandler<TIdentifier> Handler { get; }
         
-        /// <inheritdoc />
         /// <summary>
         /// Creates new identifier generator with specified generator handler and initial identifier.
         /// </summary>
@@ -19,8 +20,7 @@
         /// <param name="invalidIdentifier">The invalid identifier.</param>
         public InstanceIdentifierGenerator(InstanceIdentifierGeneratorHandler<TIdentifier> handler, TIdentifier defaultIdentifier, TIdentifier invalidIdentifier) : base(defaultIdentifier, invalidIdentifier)
         {
-            Handler = handler;
-            PreviousIdentifier = defaultIdentifier;
+            Handler = handler ?? throw new ArgumentNullException(nameof(handler));
         }
 
         public override TIdentifier Generate()

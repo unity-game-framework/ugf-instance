@@ -22,7 +22,7 @@ namespace UGF.Instance.Runtime
         /// <param name="generator">The generator used to create new identifiers.</param>
         public InstanceCollection(IInstanceIdentifierGenerator<TIdentifier> generator)
         {
-            Generator = generator;
+            Generator = generator ?? throw new ArgumentNullException(nameof(generator));
         }
 
         protected virtual TIdentifier OnGenerateIdentifier()
@@ -31,7 +31,7 @@ namespace UGF.Instance.Runtime
         }
         
         public bool Contains(TIdentifier identifier)
-        {
+        {   
             return m_instances.ContainsKey(identifier);
         }
 

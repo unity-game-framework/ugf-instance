@@ -34,7 +34,7 @@ namespace UGF.Instance.Runtime.Tests
             Assert.IsTrue(collection.Contains(id), "collection.Contains(id)");
             Assert.IsTrue(collection.Generator.IsValid(id), "collection.Generator.IsValid(id)");
         }
-
+        
         [Test]
         public void Remove()
         {
@@ -101,6 +101,7 @@ namespace UGF.Instance.Runtime.Tests
         {
             var collection = new InstanceCollectionInt32<Instance>();
 
+            // ReSharper disable once UnusedVariable
             foreach (var pair in collection)
             {
             }
