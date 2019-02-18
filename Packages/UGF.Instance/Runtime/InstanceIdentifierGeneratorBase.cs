@@ -34,7 +34,7 @@ namespace UGF.Instance.Runtime
 
         public virtual bool IsValid(TIdentifier identifier)
         {
-            return Comparer<TIdentifier>.Default.Compare(identifier, InvalidIdentifier) != 0;
+            return !EqualityComparer<TIdentifier>.Default.Equals(identifier, InvalidIdentifier);
         }
     }
 }
