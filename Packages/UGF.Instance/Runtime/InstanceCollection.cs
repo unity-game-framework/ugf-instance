@@ -25,6 +25,9 @@ namespace UGF.Instance.Runtime
             Generator = generator;
         }
 
+        /// <summary>
+        /// Override this method to control identifier generation before to add instance to the collection.
+        /// </summary>
         protected virtual TIdentifier OnGenerateIdentifier()
         {
             return Generator.Generate();
