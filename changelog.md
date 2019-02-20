@@ -38,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -  InstanceIdentifierGeneratorBase: replace Comparer by EqualityComparer #17
 
 ## 1.0.0-preview - 2019-02-17
-- [Commits](https://github.com/unity-game-framework/ugf-instance/compare/master@{1day}...1.0.0-preview)
+- [Commits](https://github.com/unity-game-framework/ugf-instance/compare/5f98e4d...1.0.0-preview)
 - [Milestone](https://github.com/unity-game-framework/ugf-instance/milestone/1?closed=1)
 
 ### Added
