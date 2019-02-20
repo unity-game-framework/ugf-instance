@@ -4,7 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## Unreleased - 2019.01.01
+- [Commits](https://github.com/unity-game-framework/ugf-instance/compare/1.0.1-preview...HEAD)
+- [Milestone](https://github.com/unity-game-framework/ugf-instance/milestone/0?closed=1)
+
 ### Added
 - Nothing.
 
@@ -23,7 +26,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing.
 
-## [1.0.0-preview] - 2019-02-17
+## 1.0.1-preview - 2019.02.20
+- [Commits](https://github.com/unity-game-framework/ugf-instance/compare/release/1.0.0-preview...release/1.0.1-preview)
+- [Milestone](https://github.com/unity-game-framework/ugf-instance/milestone/2?closed=1)
+
+### Added
+-  Code: assertions checks #15
+- InstanceCollection.OnGenerateIdentifier: add summary #16
+
+### Changed
+-  InstanceIdentifierGeneratorBase: replace Comparer by EqualityComparer #17
+
+## 1.0.0-preview - 2019-02-17
+- [Commits](https://github.com/unity-game-framework/ugf-instance/compare/master...1.0.0-preview)
+- [Milestone](https://github.com/unity-game-framework/ugf-instance/milestone/1?closed=1)
+
 ### Added
 - Migrate from internal repository.
 - Add non-alloc GetEnumerator. (#3)
@@ -38,6 +55,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 > Unity Game Framework | Copyright 2019
-
-[Unreleased]: https://github.com/unity-game-framework/ugf-instance/compare/1.0.0...HEAD
-[1.0.0-preview]: https://github.com/unity-game-framework/ugf-instance/compare/master...release/1.0.0-preview
